@@ -1,2 +1,2 @@
-# gcp-mig-instance-updater
+# GCP Managed Instance updater
 Update GCP Managed instance group instances easily
