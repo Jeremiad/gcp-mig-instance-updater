@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  template-update:
+    container_name: "main"
+    build: .
+    volumes:
+    - ~/.config/gcloud:/root/.config/gcloud
+    environment:
+      - DBADDRESS=
+      - DBUSER=
+      - DBPASSWORD=
+      - DBPORT=3306
+      - DBNAME=
+    entrypoint: 
+      - /bin/bash
+    command: "-s"
+    tty: true
