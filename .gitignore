@@ -2,6 +2,9 @@ config.json
 docker-compose.yml
 .vs
 .vscode
+Scripts
+Include
+pyvenv.cfg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

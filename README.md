@@ -7,6 +7,16 @@ Update GCP Managed instance group instances easily
 * Python 2.7+
 * Required Python modules: https://github.com/Jeremiad/mig-updater/blob/master/requirements.txt
 * Google Cloud SDK installed https://cloud.google.com/sdk/install
+* Authenticated Cloud SDK https://cloud.google.com/sdk/docs/authorizing
+
+## Virtualenv setup
+```virtualenv .```
+or
+```python -m virtualenv .```
+Linux:
+```.\bin\pip.exe install -r requirements.txt```
+Windows:
+```.\Scripts\pip.exe install -r .\requirements.txt```
 
 ## Usage
 
@@ -29,3 +39,5 @@ $ docker build . -t mig-updater
 ```
 $ docker run -it mig-updater python /app/mig-updater.py <friendly_name> <ssh username> <path to ssh key>
 ```
+
+

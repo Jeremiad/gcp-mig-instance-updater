@@ -2,8 +2,7 @@
 import googleapiclient.discovery, time, sys, warnings, random, datetime, json, os
 from google.oauth2 import service_account
 from sqlalchemy import create_engine, Column, String, Integer
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker, declarative_base
 from paramiko import SSHClient, AutoAddPolicy, SSHException, ssh_exception
 
 warnings.filterwarnings(action='ignore',module='.*paramiko.*')
@@ -203,6 +202,5 @@ def wait_for_operation(compute, project, zone, operation):
 
         time.sleep(1)
 # [END wait_for_operation]
-
 
 main()
