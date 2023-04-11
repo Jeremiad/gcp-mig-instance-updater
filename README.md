@@ -10,12 +10,15 @@ Update GCP Managed instance group instances easily
 * Authenticated Cloud SDK https://cloud.google.com/sdk/docs/authorizing
 
 ## Virtualenv setup
-```virtualenv .```
-or
-```python -m virtualenv .```
+
+```virtualenv .``` or ```python -m virtualenv .```
+
 Linux:
+
 ```.\bin\pip.exe install -r requirements.txt```
+
 Windows:
+
 ```.\Scripts\pip.exe install -r .\requirements.txt```
 
 ## Usage
